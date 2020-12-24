@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+<h1>Salam Bayastan!!!</h1>
+
+<button id="btn">Click me</button>
+
+<div class="box" id="box"></div>
+
+<button id="color-btn">Change color</button>
+
+<script>
+    let btn = document.getElementById('btn'),
+        color_btn = document.getElementById('color-btn'),
+        box = document.getElementById('box');
+
+    btn.addEventListener('click', function () {
+        alert('Salam Bayastan!!!')
+    });
+
+    color_btn.addEventListener('click', function () {
+        box.style.backgroundColor = 'black';
+    })
+</script>
+</body>
+</html>
